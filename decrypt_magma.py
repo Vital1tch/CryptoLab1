@@ -3,15 +3,12 @@ from gostcrypto.gostcipher import GOST34122015Magma
 from binascii import unhexlify
 
 # Входные данные
-file_name = "10-Magma.png.enc"
-key_hex = "cdf4d90eebe2243d6ac1e616a2edc269dbda55b65c542e855cfa39e3db07e0da"
+file_name = "28-Magma.png.enc"
+key_hex = "d4a1ffc7798a491a72ec35aa5c77cf08cbfa7d6e162fdb5a8e5fdd4310be4c40"
 
 # Пути к директориям
 encrypted_dir = "encrypted"
 decrypted_dir = "decrypted"
-
-print("Current working directory:", os.getcwd())
-
 
 # Конвертация ключа в байты
 key = unhexlify(key_hex)
